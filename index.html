@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MONAD HUNT</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>MonadHunt NFT Gacha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
 </head>
 <body>
-  <h1>Welcome to MONAD HUNT!</h1>
-  <p>🚧 Work In Progress 🚧</p>
-  <script src="script.js"></script>
+    <h1>MonadHunt NFT Gacha</h1>
+
+    <button id="connect">Connect Wallet</button>
+    <p id="walletAddress">Wallet: -</p>
+
+    <h2>Gacha</h2>
+    <button onclick="gacha()">Gacha x1</button>
+    <button onclick="gachaBatch(5)">Gacha x5</button>
+    <button onclick="gachaBatch(10)">Gacha x10</button>
+
+    <h2>Your NFT Collection</h2>
+    <div id="nftBalances">-</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
